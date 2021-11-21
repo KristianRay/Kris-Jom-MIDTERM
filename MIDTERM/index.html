@@ -1,47 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>ECST Website</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" />
 </head>
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success" style="padding: 20px; position: fixed; width: 100%;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">logo here</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Inquire</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Scholarship</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+<body id="page-top">
+    <nav class="bg-black navbar-expand-lg container-sm" style="height: 20px; width: 100%;"></nav>
+    <nav class="navbar navbar-expand-lg bg-primary text-uppercase fixed-top" id="mainNav">
+      
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Logo Here</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home">Home</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#scholarship">Scholarship</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#location">Location</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead bg-secondary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+          <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+          <h1 class="masthead-heading text-uppercase mb-0">Eastwood College Of Science And Technology</h1>         
+          <div class="divider-custom divider-light">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+              <div class="divider-custom-line"></div>
+          </div>
+          <p class="masthead-subheading font-weight-light mb-0">Brgy. San Ramon, Dinalupihan, Bataan</p>
       </div>
-    </div>
-  </nav>
+  </header>
+<style>
+  .shadow{
+    text-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+</style>
 
 <section style="height: 840px;">
-  <div>
--content here-
+  <div class="container d-flex " data-aos="fade-down" style="color: black; width: 95%; justify-content: center; padding:90px 10px; height: 100%;">
+    
+    <div class="container bg-light shadow border border-secondary aos-item" style="float: left; width: 500px; text-align: center; margin-right: 50px;">
+      <h1 style="margin-top: 6px;">MISSION</h1>
+      <p>Lor</p>
+    </div>
+    <div class="container bg-light shadow border border-secondary " data-aos="fade-down" style="float: right; width: 500px; text-align: center; margin-left: 50px;">
+      <h1 style="margin-top: 6px;">VISION</h1>
+      <p>Lor</p>
+    </div>
   </div>
 </section>
 
@@ -53,5 +72,8 @@
   </div>
 </section>
   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>ECST Website</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="School Resources/ECSTlogo.png" />
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg bg-primary text-uppercase fixed-top" id="mainNav">
       
         <div class="container">
-            <a class="navbar-brand" href="#page-top"><img style="width: 50px; height: 50px;" src="School Resources/ecst_logo.png" alt="..."/></a>
+            <a class="navbar-brand" href="#page-top"><img class="img-fluid" style="width: 50px; height: 50px;" src="School Resources/ecst_logo.png" alt="Responsive image"/></a>
             
             <button class="navbar-toggler text-uppercase font-weight-bold bg-secondary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -30,15 +30,15 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home">Home</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#quicklinks">Quick Links</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#location">Location</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#scholarship">Scholarship</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact Us</a></li>
                     
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="masthead bg-secondary text-white text-center">
+    <header class="masthead bg-secondary text-white text-center" id="home">
       <div class="container d-flex align-items-center flex-column">
-          <img class="masthead-avatar mb-5" style="width: 400px; height: 400px;" src="School Resources/ecst_logo.png" alt="..." />
+          <img class="masthead-avatar mb-5" data-aos="fade-in" style="width: 400px; height: 400px;" src="School Resources/ecst_logo.png" alt="..." />
           <h1 class="masthead-heading text-uppercase mb-0">Eastwoods College Of Science And Technology</h1>         
           <div class="divider-custom divider-light">
               <div class="divider-custom-line"></div>
@@ -53,27 +53,42 @@
               <a href="https://ecst.edu.ph/moodle/" target="_blank" rel="noopener noreferrer" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
                 <img style="width: 50px; height: 50px;" src="images/moodle_logo.png">
                 </a><br><br>
-                <button class="btn btn-primary btn-lg" href="#!" data-bs-dismiss="modal">
-                    <i></i>
-                    Enroll Now!!!
-                </button>
+                <div class="text-center mt-4 bg-primary rounded">
+                    <a class="btn btn-xl btn-outline-light" href="https://forms.gle/FhKnTpHXMX72STEz6" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-social mx-1">
+                        Enroll Now!!!
+                    </a>
+                </div>
           </div>
       </div>
   </header>
 <style>
-  .shadow{
-    text-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-  }
+    .shadow{
+        text-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+    }
+    .google-maps {
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 </style>
 
 <section style="height: 840px;">
   <div class="container d-flex" style="color: black; width: 95%; justify-content: center; padding:90px 10px; height: 100%;">
     
-    <div class="container bg-light shadow border border-secondary" data-aos="fade-down" style="float: left; width: 500px; text-align: center; margin-right: 50px;">
+    <div class="container bg-light shadow border border-secondary" data-aos="fade-right" style="float: left; width: 500px; text-align: center; margin-right: 50px;">
       <h1 style="margin-top: 6px;">MISSION</h1>
       <p class="font-weight-light mb-0 fs-3 masthead">"To develop and offer high quality technical, health and higher education programs that would ensure 	employability and productivity of young men and women through proper values and principles as a means to achieve success with excellence for a better quality of life."</p>
     </div>
-    <div class="container bg-light shadow border border-secondary" data-aos="fade-down" style="float: right; width: 500px; text-align: center; margin-left: 50px;">
+    <div class="container bg-light shadow border border-secondary" data-aos="fade-left" style="float: right; width: 500px; text-align: center; margin-left: 50px;">
       <h1 style="margin-top: 6px;">VISION</h1>
       <p class="font-weight-light mb-0 fs-3 masthead">"A center of excellence in technical, vocational, health and higher education in Bataan, pursuing dynamic program offerings paralleled to global standards to uplift the socio-economic growth of the province."</p>
     </div>
@@ -81,17 +96,13 @@
 </section>
 <section class="page-section portfolio bg-secondary text-white" data-aos="fade-down" id="quicklinks">
   <div class="container">
-      <!-- Portfolio Section Heading-->
       <h2 class="page-section-heading text-center text-uppercase mb-0">Quick Links</h2>
-      <!-- Icon Divider-->
       <div class="divider-custom">
           <div class="divider-custom-line"></div>
           <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
           <div class="divider-custom-line"></div>
       </div>
-      <!-- Portfolio Grid Items-->
       <div class="row justify-content-center ">
-          <!-- Portfolio Item 1-->
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-in">
               <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                   <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -101,7 +112,6 @@
                   <h3>School Calendar</h3>
               </div>
           </div>
-          <!-- Portfolio Item 2-->
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-in">
               <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#facilities">
                   <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -111,9 +121,8 @@
                   <h3>Facilities</h3>
               </div>
           </div>
-          <!-- Portfolio Item 3-->
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-in">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#programs">
                   <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                       <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                   </div>
@@ -121,9 +130,8 @@
                   <h3>Programs & Courses</h3>
               </div>
           </div>
-          <!-- Portfolio Item 4-->
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade-in">
-              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+              <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#about">
                   <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                       <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                   </div>
@@ -131,7 +139,6 @@
                   <h3> About</h3>
               </div>
           </div>
-          <!-- Portfolio Item 5-->
           <div class="col-md-6 col-lg-4 mb-5 mb-md-0" data-aos="fade-in">
               <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#policies">
                   <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -141,7 +148,6 @@
                   <h3> Policies</h3>
               </div>
           </div>
-          <!-- Portfolio Item 6-->
           <div class="col-md-6 col-lg-4" data-aos="fade-in">
               <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                   <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -158,16 +164,94 @@
   <div class="container-fluid" style="width: 100%; margin: 0px; padding: 0px 55px;">
     <h2 class="page-section-heading text-center text-uppercase ">Location</h2>
       <h3> We Our Here</h3>
-      <div style="justify-content: center;">
-        <iframe class="dflex" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d470.730076803267!2d120.4618118!3d14.8689275!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1637503605816!5m2!1sen!2sph" width="1400" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="google-maps" style="justify-content: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d470.730076803267!2d120.4618118!3d14.8689275!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1637503605816!5m2!1sen!2sph" width="1400" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
   </div>
 </section>
 
 <section>
   <div>
-    <footer class="bg-success" style="padding: 20px; height: 500px; color: whitesmoke;">
--footer here-
+    <footer class="bg-white ">
+        <section class="page-section bg-secondary container-fluid" data-aos="fade-down" id="contact">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Contact Us</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="form-floating mb-3">
+                                <input class="form-control rounded" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">&nbsp&nbsp&nbsp&nbspFull name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control rounded" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">&nbsp&nbsp&nbsp&nbspEmail address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control rounded" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">&nbsp&nbsp&nbsp&nbspPhone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control rounded" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">&nbsp&nbsp&nbsp&nbspMessage</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3 text-white">
+                                    <div class="fw-bolder text-white">Form submission successful!</div>
+                                    You can Hangup with Other Students at
+                                    <br />
+                                    <a href="https://www.facebook.com/ECSTSecrets/" target="_blank" rel="noopener noreferrer">ECST Secret Files</a>
+                                </div>
+                            </div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center text-secondary bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <img class="img-fluid" style="width: 210px; height: 210px;" src="School Resources/ecst_logo.png" alt="image">
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Adresses</h4>
+                        <p class="lead mb-0 text-start">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspSan Ramon, Dinalupihan, Bataan<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspFB Account: eastwoodscollegedinalupihan<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTelefax: (047) 636-1571 <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbspCell phone #: 09088923007
+                            
+                            
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Business Hours</h4>
+                        <p class="lead mb-0 text-start">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMonday - Friday	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp8:00am - 5:00pm<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSaturday	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp9:30am - 12:30pm<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSunday	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspClosed
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Eastwoods College Of Science And Technology 2021</small></div>
+        </div>
     </footer>
   </div>
 </section>
@@ -179,18 +263,13 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">School Calendar</h2>
-                            <!-- Icon Divider-->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                 <div class="divider-custom-line"></div>
                             </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <p class="mb-4">Not Available For Now.</p>
                             <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
@@ -267,7 +346,7 @@
     </div>
 </div>
 <!-- Portfolio Modal 3-->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="programs" tabindex="-1" aria-labelledby="programs" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -275,18 +354,100 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Programs & Courses</h2>
-                            <!-- Icon Divider-->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                 <div class="divider-custom-line"></div>
                             </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <h3 class="mb-4 text-secondary">We Offered</h3><br>
+                                <div class="text-start">
+                                    <h4 class="mb-4">Grades 7-10 (ESC Accredited)</h4>
+                                    
+                                    <div class="accordion accordion-flush" id="Course">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                <p class="mb-4">Senior High School Tracks</p>
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#Course">
+                                            <div class="accordion-body">
+                                                <h5 class="mb-4">&nbsp&nbsp&nbspAcademic Strands</h5>
+                                        <p>
+                                    	    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- General Academic Strand (GAS)<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Accountancy, Business & Management (ABM)<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Humanities and Social Sciences (HUMSS)<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Science, Technology, Engineering & Mathematics (STEM)
+                                        </p>
+                                    <h5 class="mb-4">&nbsp&nbsp&nbspTVL Strands</h5>
+                                    <h6 class="mb-4">&nbsp&nbsp&nbsp&nbspInformation & Communication Technology</h6>
+                                        <p>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Animation<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Computer Programming<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Contact Center Services<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Computer Systems Servicing
+                                        </p>
+                                    <h6 class="mb-4">&nbsp&nbsp&nbsp&nbspHome Economics</h6>
+                                        <p>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Food and Beverage Services<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Bread and Pastry Production<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Cookery<br> 
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Housekeeping<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Caregiving<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Wellness Massage<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Front Office Services<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Tourism Promotion Services<br>
+                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Local Guiding Services
+                                        </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    <p class="mb-4">College</p>
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#course">
+                                                <div class="accordion-body">
+                                                    <h5 class="mb-4">&nbsp&nbsp&nbspDiploma Programs</h5>
+                                                        <p>
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Diploma in Computer Engineering Technology<br>
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Diploma in Information Technology<br>
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Diploma in Hotel and Restaurant Technology<br>
+                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Diploma in Tourism and Travel Management Technology
+                                                        </p>
+                                                    <h5 class="mb-4">&nbsp&nbsp&nbspTwo-Year Programs</h5>
+                                                        <p>
+                                                        <h6>&nbsp&nbsp&nbsp&nbsp Computer Secretarial w/ Call Center and Front Office<br></h6>
+                                                        <h6>&nbsp&nbsp&nbsp&nbsp HOTEL AND RESTAURANT SERVICES  With 6 Qualifications<br></h6>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Bartending NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Cookery NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Bread And Pastry Production NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Food And Beverage Services NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Housekeeping NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Front Office Services NC II
+                                                        </p>
+                                                    <h5 class="mb-4">&nbsp&nbsp&nbspTESDA Qualifications</h5>
+                                                        <P>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Bartending NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Cookery NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Bread And Pastry Production NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Food And Beverage Services NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Housekeeping NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Front Office Services NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Computer Systems Servicing NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Contact Center Services NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Health Care Services NC II<br>
+                                                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp- Events Management NC III
+
+                                                        </P>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>
                             <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
@@ -299,28 +460,27 @@
     </div>
 </div>
 <!-- Portfolio Modal 4-->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="about" tabindex="-1" aria-labelledby="about" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
             <div class="modal-body text-center pb-5">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
+                        <div class="col-lg-8 text-secondary">
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">About</h2>
-                            <!-- Icon Divider-->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                 <div class="divider-custom-line"></div>
                             </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <h4 class="mb-4 text-secondary">OUR PHILOSOPHY</h4>
+                            <h4>
+                                <p class="mb-4">
+                                <i class="fas fa-quote-left fa-xs text-primary"></i>The paramount role of EASTWOODS College is to empower our studentry, through education and training, with a solid foundation of knowledge, skills and moral values necessary in the attainment of their potential enabling them to be competitive, proactive and productive citizens of our country.<i class="fas fa-quote-right fa-xs text-primary"></i><br></p>
+                            </h4>
                             <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                <i class="fas fa-times fa-fw"></i>
+                                <i class="fas fa-times fa-fw"></i></h4>
                                 Close Window
                             </button>
                         </div>
@@ -365,19 +525,20 @@
             <div class="modal-body text-center pb-5">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
+                        <div class="col-lg-8 py-3">
                             <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Work with Us</h2>
-                            <!-- Icon Divider-->
                             <div class="divider-custom">
                                 <div class="divider-custom-line"></div>
                                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                 <div class="divider-custom-line"></div>
                             </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="images/ECSTPOlicies.png" alt="..." />
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                            <h3 class=" text-secondary text-uppercase mb-0"">
+                                <p class="mb-5"> Also Contact</p>
+                                
+                                <a class="py-3 text-secondary text-uppercase mb-0 " href="https://www.facebook.com/ramon.valencia.566148" target="_blank" rel="noopener noreferrer" class="flex-c-m size5 bg4 how1 trans-04 m-r-5">
+                                        <i> Sir Ramon Valencia</i> 
+                                </a>
+                            </h3><br>
                             <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
                                 <i class="fas fa-times fa-fw"></i>
                                 Close Window
